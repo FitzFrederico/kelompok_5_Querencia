@@ -3,12 +3,12 @@
 kami menyediakan dan melayani pembelian tiket ( kereta, pesawat, bus, ) secara online maupun offline
 <br /> Anggota Kelompok :
 <br />
-Fitz Frederico
+1.Fitz Frederico
 <br />
-Matthew Oni
+2.Matthew Oni
 <br />
-Upie Fitri Nurqalby
+3.Upie Fitri Nurqalby
 <br />
-Muhammad Isnaini Syaifudin
+4.Muhammad Isnaini Syaifudin
 <br />
-Tasya Syamsudin
+5.Tasya Syamsudin
