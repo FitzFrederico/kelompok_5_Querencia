@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flights</title>
+
+  <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+    * {
+      box-sizing:border-box;
+    }
+
+    footer {
+      background-color: black;
+    }
+      
+    .container {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: grid;
+      row-gap: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Querencia__16_-removebg-preview.png" alt="logo" title="Querencia Travel Tickets" width="170px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i>
+              <b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html">
+              <i class="fas fa-map-marker-alt"></i>
+              <b>Destinations <span class="sr-only">(current)</span></b></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="flights.html">
+              <i class="fas fa-plane"></i>
+              <b>Flights</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trains.html">
+              <i class="fas fa-subway"></i>
+              <b>Trains</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hotels.html">
+              <i class="fas fa-hotel"></i>
+              <b>Hotels</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mybooking.html">
+              <i class="fas fa-calendar-check"></i>
+              <b>My Booking</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle"></i>
+                <b>User</b>
+              </a>
+              
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="signin.html">
+                  <i class="far fa-user"></i>
+                  Sign In</a>
+                <a class="dropdown-item" href="signup.html">
+                  <i class="fas fa-user"></i>   
+                  Sign Up</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-h"></i>  
+                  </a>
+                </li>
+                  
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="promotions.html">
+                    <i class="fas fa-percent"></i>
+                    Promotions</a>
+                  <a class="dropdown-item" href="payments.html">
+                    <i class="fas fa-wallet"></i>    
+                    Payments</a>  
+                  <a class="dropdown-item" href="contactus.html">
+                    <i class="fas fa-phone-alt"></i>
+                    Contact Us</a>
+                  <a class="dropdown-item" href="howtobook.html">
+                    <i class="fas fa-book"></i>    
+                    How to Book</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%;">
+      <div class="col-13">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/Flights.jpg" alt="Second slide" height="600px">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h1>Flights</h1>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <div style="margin: 3% 5%">
+    <h1 class="text-center">Flight Ticket</h1>
+    <br /><br />
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card mb-3">
+          <div class="card-body" style="background-color: black; color: orange;">
+            <div class="row mb-4">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                  <img src="img/uk.jpg" alt="" class="img-fluid w-100" />
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9">
+                <div>
+                  <div class="d-flex justify-content-between">
+                  <div>
+                    <h5>London, United Kingdom</h5>
+                    <p class="mb-2 text-muted text-uppercase small">Flight</p>
+                    <p class="mb-3 text-muted text-uppercase small">Indonesia --- London</p>
+                  </div>
+                  <div>
+                    <div class="row">
+                      <div class="mb-0 w-100">
+                        <div class="input-group">
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" onclick="minus('inputNum')"><i data-feather="minus-square"></i></button>
+                          </span>
+                          <input type="text" disabled="disabled" value="1" class="form-control input-number" id="inputNum" />
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" onclick='add("inputNum")'><i data-feather="plus-square"></i></button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href="" type="button" class="card-link-secondary small text-uppercase mr-3"><i data-feather="trash"></i>Remove Booking</a>
+                    <a href="" type="button" class="card-link-secondary small text-uppercase mr-3"><i data-feather="shopping-bag"></i>Add to My Booking</a>
+                  </div>
+                  <p class="mb-0">
+                    <span><strong>Rp 5999000</strong></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4">
+      <div class="card mb-3">
+        <div class="card-body" style="background-color: black; color: orange;">
+          <div class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+              <div>
+                <strong>Total</strong>
+              </div>
+              <span><strong>Rp 5999000</strong></span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+   <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                          <img src="img/tempat-menarik-di-Seoul.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                              <h5 class="card-title">South Korea</h5>
+                              <p class="card-text" style="color: black;">South Korea is a country in East Asia, constituting the southern part of the Korean Peninsula.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/Arab Saudi.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">Saudi Arabia</h5>
+                            <p class="card-text" style="color: black;">Saudi Arabia is a country in Western Asia, officially the Kingdom of Saudi Arabia.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/China.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">China</h5>
+                            <p class="card-text" style="color: black;">China is a country in East Asia, officially the people's Republic of China</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/Dubai.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">United Arab Emirates</h5>
+                            <p class="card-text" style="color: black;">UAE is a country in western Asia located at the end of the Arabian Peninsula.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/filipina.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">Philippines</h5>
+                            <p class="card-text" style="color: black;">Philippines is a country in Southeast Asia, officially the Republic of Philippines.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/eiffel.jpeg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">France</h5>
+                            <p class="card-text" style="color: black;">France is a country in Western Europe, encompases medieval city, alphine villages.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/indonesia.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">Indonesia</h5>
+                            <p class="card-text" style="color: black">Indonesia is a country in Southeast Asia and Oceania between Indian and Pasific.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/Jepang.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">Japan</h5>
+                            <p class="card-text" style="color: black;">Japan is a country in East Asia, located in the norweast Pasific Ocean.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-3">
+                  <a href="" style="color: orange;">
+                      <div class="card">
+                        <img src="img/Los Angeles.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                            <h5 class="card-title">United States</h5>
+                            <p class="card-text" style="color: black;">US is a country of 50 States covering a vast swath of North America.</p>
+                              <br>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br><br>
+
+        <footer class="bg-dark text-warning pt-5 pb-4">
+
+          <div class="container text-center text-md-left">
+    
+            <div class="row text-center text-md-left">
+    
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <img src="img/Querencia__16_-removebg-preview.png" width="170px">
+                <h6 class="text-uppercase mb-4">Travel Tickets</h6>
+              </div>
+    
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4">About Querencia</h6>
+              <p>
+                <a href="" class="text-light">How to Book</a>
+              </p>
+              <p>
+                <a href="" class="text-light">Contact Us</a>
+              </p>
+              <p>
+                <a href="" class="text-light">About Us</a>
+              </p>
+              </div>
+    
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase">Follow Us On</h6>
+                <p>
+                  <a href="" class="text-light" style="text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                    Instagram</a>
+                </p> 
+                <p>
+                  <a href="" class="text-light" style="text-decoration: none;">
+                    <i class="fab fa-facebook-square"></i>
+                    Facebook</a>
+                </p> 
+              </div>
+    
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase">Payment</h6>
+                <p>
+                  <a href="" class="text-light" style="text-decoration: none;">
+                    <img src="img/mastercard.png" width="110px" height="50px">
+                  </a>
+                </p>
+                <p>
+                  <a href="" class="text-light" style="text-decoration: none;">
+                    <img src="img/paypal.png" width="140px" height="40px">
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+</body>
+</html>
