@@ -1,6 +1,6 @@
 # kelompok_5_Querencia
 
-kami menyediakan dan melayani pembelian tiket ( kereta, pesawat, bus, ) secara online maupun offline
+kami menyediakan dan melayani pembelian tiket ( kereta, pesawat, ) secara online maupun offline
 <br /> Anggota Kelompok :
 <br />
 1.Fitz Frederico - 535190068
