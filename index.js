@@ -9,6 +9,8 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
+port = process.env.PORT || 3000
+
 app.use(session({
     secret: 'som3_secret_keys',
     cookie: {}
@@ -36,6 +38,6 @@ app.use('/', indexRouter);
 app.use('/user', userRouter);
 
 //port
-app.listen('3000', ()=> {
+app.listen(port, ()=> {
     console.log('Server sudah berjalan di port 3000')
 })
