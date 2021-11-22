@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotions</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+      .carousel-item {
+          background: black;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+          opacity: 0.8;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      a {
+          font-size: 15px;
+      }
+      h2 {
+          background-color: black;
+          color: #ffbb00;
+          font-size: 50px;
+      }
+      .col img {
+          width: 200px;
+          height: 200px;
+      }
+      * {
+      box-sizing:border-box;
+    }
+
+    .container {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: grid;
+      row-gap: 10px;
+    }
+
+  </style>
+</head>
+<body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>dicover new places with us, adventure awaits</p>
+        </div>
+      
+        <div class="video-container">
+            <video src="img/videoplayback.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+      
+      </section>
+
+<!-- home section ends -->
+  
+      <br>  
+
+      <section class="gallery" id="gallery">
+    
+        <h1 class="heading">
+            <span>P</span>
+            <span>R</span>
+            <span>O</span>
+            <span>M</span>
+            <span>O</span>
+            <span>T</span>
+            <span>I</span>
+            <span>O</span>
+            <span>N</span>
+        </h1>
+        <p class="text-center" style="font-size: 16pt;"><i>Our Special Price and Voucher, For You</i></p>
+        
+        <br>
+
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="img/1.jpg" alt="">
+                <div class="content">
+                    <h3>Indonesia</h3>
+                    <p>There is a New Year's Special Hotel promo. Hotel discounts up to 60% for hotels in Indonesia.</p>
+                    <p>Promo code: HTL1DN</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/3.jpg" alt="">
+                <div class="content">
+                    <h3>Australia</h3>
+                    <p>There is a New Year's Special train promo. Train discounts up to 60% for trains in Australia.</p>
+                    <p>Promo code: TRN45T</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/2.jpg" alt="">
+                <div class="content">
+                    <h3>Switzerland</h3>
+                    <p>There is a New Year's Special flight promo. Flight discounts up to 60% for flights to Switzerland.</p>
+                    <p>Promo code: FLG5T2</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/4.jpg" alt="">
+                <div class="content">
+                    <h3>Japan</h3>
+                    <p>There is a New Year's Special train promo. Train discounts up to 60% for trains in Japan.</p>
+                    <p>Promo code: TRN7PN</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/5.jpg" alt="">
+                <div class="content">
+                    <h3>United States</h3>
+                    <p>There is a New Year's Special flight promo. Flight discounts up to 60% for flights to USA.</p>
+                    <p>Promo code: FLGU54</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/6.jpg" alt="">
+                <div class="content">
+                    <h3>Zimbabwe</h3>
+                    <p>There is a New Year's Special hotel promo. Hotel discounts up to 60% for hotels in Zimbabwe.</p>
+                    <p>Promo code: HTL2B3</p>
+                </div>
+              </div>
+    
+        </div>
+    
+    </section>
+    <%- include('../layouts/footer.ejs'); %>
+</body>
+</html>

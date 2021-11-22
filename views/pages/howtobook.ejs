@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Book</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+      .carousel-item {
+          background: black;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+          opacity: 0.8;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      a {
+          font-size: 15px;
+      }
+      h2 {
+          background-color: black;
+          color: #ffbb00;
+          font-size: 50px;
+      }
+      .col img {
+          width: 200px;
+          height: 200px;
+      }
+      * {
+      box-sizing:border-box;
+    }
+
+    .container {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: grid;
+      row-gap: 10px;
+    }
+  </style>
+</head>
+<body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <section class="services" id="services">
+    
+        <h1 class="heading">
+            <span>H</span>
+            <span>O</span>
+            <span>W</span>
+            &nbsp;
+            <span>T</span>
+            <span>O</span>
+            &nbsp;
+            <span>B</span>
+            <span>O</span>
+            <span>O</span>
+            <span>K</span>
+        </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <i class="fas fa-users"></i>
+                <h3>User</h3>
+                <p>1. Create an account on Querencia First</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Destinations</h3>
+                <p>2. Choose the destination country what you want to see various tourist attractions.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Flights</h3>
+                <p>3. Choose the destination of the flight and fill in the form provided.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-subway"></i>
+              <h3>Trains</h3>
+              <p>4. Choose the destination of the train and fill in the form provided.</p>
+            </div><div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Hotels</h3>
+                <p>5. Choose the hotel what you want and fill in the form provided.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-percentage"></i>
+              <h3>Promotions</h3>
+              <p>6. If the promotion what you want is available, look at the code and enter it in the payment page.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-calendar-alt"></i>
+              <h3>My Booking</h3>
+              <p>7. If you have filled out the form according to the order you chose, it will be saved in my booking.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-dollar-sign"></i>
+              <h3>Payments</h3>
+              <p>8. After the booking process is complete, go to the payment page and select the type of payment what you want.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Contact Us</h3>
+              <p>9. if you have any questions or other things about Querencia, you can send a messagevia contact us.</p>
+            </div>
+          </div>
+
+    </section>
+    <%- include('../layouts/footer.ejs'); %>
+</body>
+</html>

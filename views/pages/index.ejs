@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Querencia Travel Ticket</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+      .carousel-item {
+          background: black;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+          opacity: 0.8;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      a {
+          font-size: 15px;
+      }
+      h2 {
+          background-color: black;
+          color: #ffbb00;
+          font-size: 60px;
+      }
+      .col img {
+          width: 200px;
+          height: 200px;
+      }
+      * {
+      box-sizing:border-box;
+    }
+    .container {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: grid;
+      row-gap: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <%- include('../layouts/navbar.ejs'); %>    
+  <section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>dicover new places with us, adventure awaits</p>
+    </div>
+  
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+  
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+  
+  </section>
+</div>
+
+  <br><br>    
+
+<!-- book section ends -->
+
+<!-- Untuk menampilkan rekomendasi negara-negara  -->
+
+<section class="packages" id="packages">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/Bali.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destId" style="font-size: 2rem;">Indonesia</a></i></h3>
+                <p>Indonesia is a country in Southeast Asia and Oceania between Indian and Pasific.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $200.00 <span>$220.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Australia.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destAustralia" style="font-size: 2rem;">Australia</a></i></h3>
+                <p>Australia is a sovereign country comprising the mainland of the Australian continent.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $319.00 <span>$330.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Swiss.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destSwiss" style="font-size: 2rem;">Switzerland</a></i></h3>
+                <p>Switzerland is a mountainous Central European country.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>                        
+                </div>
+                <div class="price"> $550.00 <span>$560.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Usa.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destUS" style="font-size: 2rem;">United States</a></i></h3>
+                <p>US is a country of 50 States covering a vast swath of North America.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $699.00 <span>$720.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destJapan" style="font-size: 2rem;">Japan</a></i></h3>
+                <p>Japan is a country in East Asia , located in the northwest Pasific Ocean.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $260.00 <span>$270.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Zimbabwe.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destZimbabwe" style="font-size: 2rem;">Zimbabwe</a></i></h3>
+                <p>Zimbabwe is landlocked country in southern Africa.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                       
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $480.00 <span>$499.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Brazil/Christ the Redeemer.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destBrazil" style="font-size: 2rem;">Brazil</a></i></h3>
+                <p>Brazil is the largest couuntry in both South America and Latin America.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                       
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>                    
+                    <i class="far fa-star"></i>                    
+                </div>
+                <div class="price"> $610.00 <span>$629.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destFrance" style="font-size: 2rem;">France</a></i></h3>
+                <p>France is a global center for art, fashion, gastronomy and culture.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                       
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>                                           
+                </div>
+                <div class="price"> $300.00 <span>$319.00</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Dubai.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"> <a href="/destUAE" style="font-size: 2rem;">United Emirates Arab</a></i></h3>
+                <p>UAE is a city known for luxury shopping, ultramodern architecture, and a lively nightlife scene.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                       
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>                    
+                </div>
+                <div class="price"> $250.00 <span>$240.00</span> </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>We provide variety of hotels with comfortable facilities and affordable price.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>We provide several countries from different continents to visit.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>We provide ticket booking services quickly and reliably.</p>
+        </div>
+    </div>
+
+    </section>
+
+  <br><br><br>
+  <%- include('../layouts/footer.ejs'); %>
+  <script src="js/script.js"></script>
+</body>
+</html> 

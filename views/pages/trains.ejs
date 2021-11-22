@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trains</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+      .carousel-item {
+          background: black;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+          opacity: 0.8;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      a {
+          font-size: 15px;
+      }
+      h2 {
+          background-color: black;
+          color: #ffbb00;
+          font-size: 50px;
+      }
+      .col img {
+          width: 200px;
+          height: 200px;
+      }
+      * {
+      box-sizing:border-box;
+    }
+
+    .container {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: grid;
+      row-gap: 10px;
+    }
+
+  </style>
+</head>
+<body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <section class="home" id="home">
+
+      <div class="content">
+          <h3>adventure is worthwhile</h3>
+          <p>dicover new places with us, adventure awaits</p>
+      </div>
+    
+      <div class="video-container">
+          <video src="images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
+      </div>
+    
+    </section>
+
+    <br><br>    
+
+    <section class="book" id="book">
+  
+      <div class="row">
+  
+          <form action="">
+              <div class="inputBox">
+                  <h3>where From</h3>
+                  <input type="text" placeholder="place name">
+              </div>
+              <div class="inputBox">
+                  <h3>where to</h3>
+                  <input type="text" placeholder="place name">
+              </div>
+              <div class="inputBox">
+                  <h3>guests</h3>
+                  <input type="number" placeholder="number of guests">
+              </div>
+              <div class="inputBox">
+                  <h3>arrivals</h3>
+                  <input type="date">
+              </div>
+              <input type="submit" class="btn" value="book now">
+          </form>
+  
+      </div>
+  
+  </section>
+  
+  <!-- book section ends -->
+  
+  <!-- packages section starts  -->
+  
+  <section class="packages" id="packages">
+  
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/Bali.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Java Island, Indonesia </h3>
+                <p>Indonesia is a country in Southeast Asia and Oceania between Indian and Pasific.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $50.00 </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Australia.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Australia </h3>
+                <p>Australia is a sovereign country comprising the mainland of the Australian continent..</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $80.00 </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Swiss.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Switzerland </h3>
+                <p>Switzerland is a mountainous Central European country.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>                        
+                </div>
+                <div class="price"> $90.00 </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Usa.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> United States </h3>
+                <p>US is a country of 50 States covering a vast swath of North America.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $80.00 </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Japan</h3>
+                <p>Japan is a country in East Asia , located in the northwest Pasific Ocean.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $90.00 </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/Zimbabwe.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Zimbabwe </h3>
+                <p>Zimbabwe is landlocked country in southern Africa.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>                       
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $70.00 </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <%- include('../layouts/footer.ejs'); %>
+</body>
+</html>

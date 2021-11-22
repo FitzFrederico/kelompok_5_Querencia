@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+      .carousel-item {
+          background: black;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+          opacity: 0.8;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      a {
+          font-size: 15px;
+      }
+      h2 {
+          background-color: black;
+          color: #ffbb00;
+          font-size: 50px;
+      }
+      .col img {
+          width: 200px;
+          height: 200px;
+      }
+      * {
+      box-sizing:border-box;
+    }
+
+    .container {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: grid;
+      row-gap: 10px;
+    }
+
+  </style>
+</head>
+<body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <section class="home" id="home">
+
+      <div class="content">
+          <h3>adventure is worthwhile</h3>
+          <p>dicover new places with us, adventure awaits</p>
+      </div>
+    
+      <div class="video-container">
+          <video src="images/vid-5.mp4" id="video-slider" loop autoplay muted></video>
+      </div>
+    
+    </section>
+
+    <br><br>    
+
+    <section class="book" id="book">
+  
+      <div class="row">
+  
+          <form action="">
+              <div class="inputBox">
+                  <h3>where to</h3>
+                  <input type="text" placeholder="place name">
+              </div>
+              <div class="inputBox">
+                  <h3>guests</h3>
+                  <input type="number" placeholder="number of guests">
+              </div>
+              <div class="inputBox">
+                  <h3>check in</h3>
+                  <input type="date">
+              </div>
+              <div class="inputBox">
+                  <h3>check out</h3>
+                  <input type="date">
+              </div>
+              <h2 class="card-title text-center">Book Now</h2>
+              <div class="card-body py-md-10">
+                <form id="BookNow" action="/payments" _lpchecked="1">
+          </form>
+  
+      </div>
+  
+  </section>
+  
+  <!-- book section ends -->
+  
+  <!-- packages section starts  -->
+  
+  <section class="packages" id="packages">
+  
+      <div class="box-container">
+  
+          <div class="box">
+              <img src="img/Bali Resort.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Intercontinental Bali Resort</h3>
+                  <p>Location: Uluwatu 45, Jimbaran, Kuta Selatan, Bali, Indonesia, 80361</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $220.00</div>
+                  <a href="#" class="btn">Book Now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img src="img/Park Hyatt Tokyo.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Park Hyatt Tokyo </h3>
+                  <p>Location: 3-7-1-2, Nishishinjuku, Tokyo 163-1055, Japan</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $450.00</div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img src="img/Emporium Hotel.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Emporium Hotel South Bank</h3>
+                  <p>Location: 267 Grey Street, South Brisbane, 4101 Brisbane, Australia </p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $200.00 </div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img src="img/Trump-International-Hotel-and-Tower-Chicago.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Trump International Hotel & Tower Chicago</h3>
+                  <p>Location: 401 N Wabash Ave, Chicago, IL 60611, United States</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $360.00</div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img src="img/Hotel Royal Savoy Lausanne.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Hotel Royal Savoy Lausanne </h3>
+                  <p>Location: Av. d'Ouchy 40, 1006 Lausanne, Switzerland</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $300.00</div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img src="img/The Victoria Falls Hotel.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> The Victoria Falls Hotel</h3>
+                  <p>Location: 1 Mallet Dr, Victoria Falls, Zimbabwe</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $400.00</div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+      </div>
+  
+  </section>
+
+    <%- include('../layouts/footer.ejs'); %>
+</body>
+</html>

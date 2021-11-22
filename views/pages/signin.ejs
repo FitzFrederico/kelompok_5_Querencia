@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/css/signin.css" />
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+     * {
+       box-sizing:border-box;
+     }
+
+     footer {
+       background-color: black;
+     }
+      
+     .container {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: grid;
+      row-gap: 10px;
+     }
+  </style>
+</head>
+<body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <div class="container" style="margin: 5% 5%;">
+        <form method="post" action="/user/login">
+        <div class="row justify-content-center">
+            <div class="col-md-50">
+                <div class="card" style="color: black;  background-color: orange;">
+                <h2 class="card-title text-center">Sign In</h2>
+                <div class="card-body py-md-10">
+                    <form _lpchecked="1">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>             
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <button class="btn btn-primary">Log In</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <%- include('../layouts/footer.ejs'); %>
+    <script src="/js/signin.js"></script>
+</body>
+</html>
