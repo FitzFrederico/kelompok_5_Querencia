@@ -1,0 +1,17 @@
+KELOMPOK 5
+Fitz Frederico [535190068]
+Matthew Oni [535190055]
+Upie Fitri Nurqalby [535200068]
+Tasya Syamsudin [535200073]
+Muhammad Isnaini Syaifudin [53200070]
+
+Link Github: https://github.com/FitzFrederico/kelompok_5_Querencia
+Link Live Aplikasi: https://querencia5.herokuapp.com/
+Link Demo Apps: https://drive.google.com/drive/folders/1mDFHA3rjBA02cyJ9GIt4qv3omSoL8wQV?usp=sharing
+
+Informasi login ke aplikasi:
+Nama: Mimin
+Email: MiminQue@gmail.com
+Password: Mimin123
+
+Untuk codenya ada di master
